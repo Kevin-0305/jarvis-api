@@ -1,0 +1,23 @@
+servers:
+  - id: 1
+    host: 49.235.96.248:8888
+    user: Admin
+    password: zabbix
+  - id: 2
+    host: 49.235.96.248:8888
+    user: Admin
+    password: zabbix
+items:
+  hostName: agent.hostname
+  cpuUtil: system.cpu.util
+  uptime: system.uptime
+  cpuNum: system.cpu.num
+  load1: system.cpu.load[all,avg1]
+  load5: system.cpu.load[all,avg5]
+  load15: system.cpu.load[all,avg15]
+  memoryUse: vm.memory.utilization
+  memoryTotal: vm.memory.size[total]
+  memoryFree: vm.memory.size[available]
+  updateTime: system.localtime
+group: 
+interval: 30

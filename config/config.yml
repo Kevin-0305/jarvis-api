@@ -1,0 +1,22 @@
+server:
+  name: "jarvis"
+  mode: "debug"
+  port: 9999
+log:
+  level: "debug"
+  filename: "log/jarvis.log"
+  max_siz: 1
+  max_age: 30
+  max_backups: 7
+mysql:
+  host: ""
+  port: 3306
+  user: "root"
+  password: ""
+  dbname: ""
+  max_open_conns: 200
+  max_idle_conns: 500
+redis:
+  db: 0
+  addr: 127.0.0.1:6379
+  password: ""

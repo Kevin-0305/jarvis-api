@@ -1,0 +1,161 @@
+{"level":"INFO","time":"2022-03-28T15:35:38.129+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T15:35:38.132+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T15:37:46.000+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T15:37:46.002+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T15:37:47.439+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T15:37:47.442+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T15:37:56.486+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat/1/","status":404,"method":"GET","path":"/v1/getZabbixStat/1/","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0000277}
+{"level":"INFO","time":"2022-03-28T15:38:09.496+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat/1/","status":404,"method":"GET","path":"/v1/getZabbixStat/1/","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.000001}
+{"level":"INFO","time":"2022-03-28T15:38:21.081+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T15:38:21.082+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T15:38:22.189+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T15:38:22.192+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T15:38:24.773+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat","status":404,"method":"GET","path":"/v1/getZabbixStat","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0000163}
+{"level":"INFO","time":"2022-03-28T15:38:32.454+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat","status":404,"method":"GET","path":"/v1/getZabbixStat","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0000015}
+{"level":"INFO","time":"2022-03-28T15:39:10.608+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat","status":404,"method":"GET","path":"/v1/getZabbixStat","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0000015}
+{"level":"INFO","time":"2022-03-28T15:39:32.787+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T15:39:32.789+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T15:39:34.217+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T15:39:34.218+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T15:39:37.276+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat","status":400,"method":"GET","path":"/v1/getZabbixStat","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0009352}
+{"level":"INFO","time":"2022-03-28T15:40:06.524+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T15:40:06.526+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T15:40:08.982+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T15:40:08.982+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T15:40:13.733+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat/1/","status":400,"method":"GET","path":"/v1/getZabbixStat/1/","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0006244}
+{"level":"INFO","time":"2022-03-28T15:40:34.168+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T15:40:34.170+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T15:40:41.047+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T15:40:41.049+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T15:40:46.287+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat/1/","status":200,"method":"GET","path":"/v1/getZabbixStat/1/","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0005177}
+{"level":"INFO","time":"2022-03-28T15:40:53.939+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T15:40:53.940+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T15:57:39.375+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T15:57:39.376+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T15:57:45.199+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat/1/","status":200,"method":"GET","path":"/v1/getZabbixStat/1/","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.000557}
+{"level":"INFO","time":"2022-03-28T21:04:56.392+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T21:04:56.395+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T21:05:03.331+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T21:05:03.332+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T21:05:11.289+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T21:05:11.292+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T21:05:15.558+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T21:05:15.559+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T21:08:56.892+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T21:08:56.892+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T21:09:01.161+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T21:09:01.162+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T21:09:16.829+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T21:09:16.832+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T21:09:21.026+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T21:09:21.027+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T21:09:34.118+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T21:09:34.119+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T21:09:37.001+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T21:09:37.002+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T21:12:40.089+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T21:12:40.092+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T21:12:45.746+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T21:12:45.746+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T21:13:14.220+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T21:13:14.220+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T21:13:19.692+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T21:13:19.694+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T21:15:38.502+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T21:15:38.503+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T21:15:38.570+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat/1/","status":200,"method":"GET","path":"/v1/getZabbixStat/1/","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0006946}
+{"level":"INFO","time":"2022-03-28T21:16:20.297+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T21:16:20.301+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T21:16:53.155+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T21:16:53.156+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T22:24:44.253+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T22:24:44.254+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T22:24:49.895+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-28T22:24:49.896+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-28T22:26:13.206+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T22:26:13.206+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T22:27:57.482+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T22:27:57.482+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-28T22:28:12.999+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-28T22:28:13.003+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T00:01:40.136+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T00:01:40.139+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T00:01:43.747+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat/1/","status":200,"method":"GET","path":"/v1/getZabbixStat/1/","query":"","ip":"172.30.128.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0004419}
+{"level":"INFO","time":"2022-03-29T00:05:41.344+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T00:05:41.345+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-29T00:05:47.561+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T00:05:47.561+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T00:05:56.117+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T00:05:56.118+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-29T00:06:33.083+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T00:06:33.085+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T00:09:13.646+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T00:09:13.647+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T00:09:33.543+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T00:09:33.544+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-29T00:09:39.376+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T00:09:39.380+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T09:52:03.203+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T09:52:03.204+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T09:52:23.574+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T09:52:23.575+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-29T10:11:28.174+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:11:28.177+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"ERROR","time":"2022-03-29T10:11:28.177+0800","caller":"middleware/redis.go:19","msg":"Redis连接失败，错误: ","error":"dial tcp 127.0.0.1:6379: connect: connection refused"}
+{"level":"INFO","time":"2022-03-29T10:11:28.177+0800","caller":"cmd/server.go:71","msg":"初始化数据成功"}
+{"level":"INFO","time":"2022-03-29T10:11:49.712+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:11:49.713+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:12:44.082+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:12:44.083+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:12:51.675+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T10:12:51.676+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-29T10:13:06.383+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:13:06.384+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:19:42.858+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:19:42.858+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:19:59.101+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:19:59.104+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:24:05.680+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:24:05.681+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:41:13.369+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:41:13.372+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:44:24.014+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:44:24.018+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:45:03.845+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:45:03.848+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:46:31.415+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:46:31.416+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:50:59.496+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:50:59.499+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:51:27.719+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:51:27.721+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:52:01.227+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:52:01.231+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:56:37.244+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:56:37.247+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T10:57:00.922+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T10:57:00.923+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T11:01:47.488+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T11:01:47.491+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T11:01:55.269+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T11:01:55.270+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-29T11:07:44.093+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T11:07:44.096+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T11:08:41.298+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat/1/","status":200,"method":"GET","path":"/v1/getZabbixStat/1/","query":"","ip":"192.168.32.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0004547}
+{"level":"INFO","time":"2022-03-29T11:17:57.187+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T11:17:57.188+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T11:18:03.746+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T11:18:03.747+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-29T11:18:04.972+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T11:18:04.974+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T11:18:10.284+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T11:18:10.286+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-29T11:18:43.656+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T11:18:43.659+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T11:19:40.674+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T11:19:40.674+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-29T23:18:05.640+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-29T23:18:05.643+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-29T23:18:09.680+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat/1/","status":200,"method":"GET","path":"/v1/getZabbixStat/1/","query":"","ip":"192.168.32.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0004352}
+{"level":"INFO","time":"2022-03-29T23:18:56.735+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T23:18:56.736+0800","caller":"cmd/server.go:107","msg":"Server exiting"}

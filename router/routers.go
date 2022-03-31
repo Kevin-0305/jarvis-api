@@ -16,6 +16,7 @@ func Setup() *gin.Engine {
 	v1 := r.Group("/v1")
 	{
 		v1.GET("/getZabbixStat/:id/", api.GetZabbixStat)
+		v1.POST("/hostFilter/", api.HistoryFiterApi)
 		// v1.GET("/azureCloud", azureCloud.Login)
 		// v1.GET("/test", azureCloud.Logout)
 	}

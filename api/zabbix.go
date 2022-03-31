@@ -109,31 +109,5 @@ func HostsGetByGroupName(api *zabbixgo.API, groupName string) []HostGetResult {
 		zap.L().Fatal("json 解析错误", zap.Error(err))
 	}
 	err = json.Unmarshal(ret, &result)
-	// fmt.Println(string(re))
-	// result, ok := response.Result.([]interface{})
-	// if !ok {
-	// 	log.Fatal("结果断言错误")
-	// }
-	// for _, v := range result {
-	// 	data, ok := v.(map[string]interface{})
-	// 	if !ok {
-	// 		log.Fatal("结果断言错误")
-	// 	}
-	// 	hostid := data["hostid"].(string)
-	// 	fmt.Println(hostid)
-	// 	interfaces, ok := data["interfaces"].([]interface{})
-	// 	if !ok {
-	// 		log.Fatal("结果断言错误")
-	// 	}
-	// 	value := interfaces[0].(map[string]interface{})
-	// 	ip := value["ip"].(string)
-	// 	fmt.Println(ip)
-	// }
-	// for _,v :range  response.Result.data
-	// ret, err := api.HostsGet(params)
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-
 	return result
 }

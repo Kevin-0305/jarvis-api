@@ -159,3 +159,14 @@
 {"level":"INFO","time":"2022-03-29T23:18:09.680+0800","caller":"logger/looger.go:70","msg":"/v1/getZabbixStat/1/","status":200,"method":"GET","path":"/v1/getZabbixStat/1/","query":"","ip":"192.168.32.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.0004352}
 {"level":"INFO","time":"2022-03-29T23:18:56.735+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2022-03-29T23:18:56.736+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-31T23:23:28.343+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-31T23:23:28.346+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-31T23:26:37.968+0800","caller":"logger/looger.go:70","msg":"/v1/hostFilter/","status":400,"method":"POST","path":"/v1/hostFilter/","query":"","ip":"192.168.32.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.496013}
+{"level":"INFO","time":"2022-03-31T23:27:13.961+0800","caller":"logger/looger.go:70","msg":"/v1/hostFilter/","status":400,"method":"POST","path":"/v1/hostFilter/","query":"","ip":"192.168.32.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.483814}
+{"level":"INFO","time":"2022-03-31T23:31:16.286+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-31T23:31:16.287+0800","caller":"cmd/server.go:107","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-31T23:31:17.762+0800","caller":"cmd/server.go:58","msg":"初始化日志成功"}
+{"level":"ERROR","time":"2022-03-31T23:31:17.765+0800","caller":"models/db.go:33","msg":"数据库连接失败，错误：","error":"dial tcp: address tcp/%!s(int=3306): unknown port"}
+{"level":"INFO","time":"2022-03-31T23:31:33.249+0800","caller":"logger/looger.go:70","msg":"/v1/hostFilter/","status":400,"method":"POST","path":"/v1/hostFilter/","query":"","ip":"192.168.32.1","user-agent":"PostmanRuntime/7.26.8","errors":"","cost":0.4942416}
+{"level":"INFO","time":"2022-03-31T23:31:44.677+0800","caller":"cmd/server.go:98","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-31T23:31:44.678+0800","caller":"cmd/server.go:107","msg":"Server exiting"}

@@ -1,12 +1,14 @@
 package api
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"strconv"
 	"sync"
 	"time"
 	"zbx-monitor/config"
+	"zbx-monitor/middleware"
 
 	zabbixgo "github.com/canghai908/zabbix-go"
 	"github.com/gin-gonic/gin"
@@ -35,15 +37,19 @@ func HistoryFiterApi(c *gin.Context) {
 			url := fmt.Sprintf("http://%s/api_jsonrpc.php", v.Host)
 			api := zabbixgo.NewAPI(url)
 			api.Login(v.User, v.Password)
-			statList := HistoryFilter(api, historyFilterRequest.Comp, historyFilterRequest.Cpu, historyFilterRequest.Cpu, historyFilterRequest.Days)
+			statList := HistoryFilter(api, historyFilterRequest.ServerID, historyFilterRequest.Comp, historyFilterRequest.Cpu, historyFilterRequest.Cpu, historyFilterRequest.Days)
 			c.JSON(http.StatusOK, statList)
 		}
 	}
 	c.JSON(http.StatusBadRequest, statList)
 }
 
-func HistoryFilter(api *zabbixgo.API, compareWay string, cpuCondition float64, memoryCondition float64, days int64) []map[string]interface{} {
-	hostIds := []string{"10453", "10454"}
+func HistoryFilter(api *zabbixgo.API, serverID string, compareWay string, cpuCondition float64, memoryCondition float64, days int64) []map[string]interface{} {
+	Hosts := HostsGetByGroupName(api, "")
+	hostIds := []string{}
+	for _, v := range Hosts {
+		hostIds = append(hostIds, v.HostID)
+	}
 	cpuHostItemMap := SelectItemIds(api, hostIds, "system.cpu.util[,idle]")
 	memoryHostItemMap := SelectItemIds(api, hostIds, "vm.memory.utilization")
 	var statMap sync.Map
@@ -57,21 +63,35 @@ func HistoryFilter(api *zabbixgo.API, compareWay string, cpuCondition float64, m
 		go HistoryStat(api, &statMap, &wg, ch, days, v, cpuItemId, memoryItemId)
 	}
 	wg.Wait()
-	resultSlice := HostHistoryStat(hostIds, statMap, compareWay, cpuCondition, memoryCondition)
+	resultSlice := HostHistoryStat(serverID, hostIds, statMap, compareWay, cpuCondition, memoryCondition)
 	return resultSlice
 }
 
-func HostHistoryStat(hostIds []string, statMap sync.Map, compareWay string, cpuCondition float64, memoryCondition float64) (resultSlice []map[string]interface{}) {
+func HostHistoryStat(serverID string, hostIds []string, statMap sync.Map, compareWay string, cpuCondition float64, memoryCondition float64) (resultSlice []map[string]interface{}) {
 	for _, v := range hostIds {
 		resultMap := make(map[string]interface{})
 		dataInterface, _ := statMap.Load(v)
 		dataMap := dataInterface.(map[string]float64)
+		data := middleware.RdsClient.HGet("zabbixStat", serverID)
+		var statList []map[string]string
+		err := json.Unmarshal([]byte(data.Val()), &statList)
+		if err != nil {
+			zap.L().Fatal("json 解析错误", zap.Error(err))
+		}
+		statMap := make(map[string]map[string]string)
+		for _, v := range statList {
+			statMap[v["hostId"]] = v
+		}
 		if compareWay == "gte" {
 			if cpuCondition != 0.0 && memoryCondition != 0.0 {
 				if dataMap["cpuUse"] >= cpuCondition && dataMap["memoryUse"] >= memoryCondition {
 					resultMap["hostIds"] = v
 					resultMap["cpuUse"] = dataMap["cpuUse"]
 					resultMap["memoryUse"] = dataMap["memoryUse"]
+					resultMap["hostName"] = statMap[v]["hostName"]
+					resultMap["cpuNum"] = statMap[v]["cpuNum"]
+					resultMap["memoryTotal"] = statMap[v]["memoryTotal"]
+					resultMap["ip"] = statMap[v]["ip"]
 					resultSlice = append(resultSlice, resultMap)
 				}
 
@@ -80,6 +100,10 @@ func HostHistoryStat(hostIds []string, statMap sync.Map, compareWay string, cpuC
 					resultMap["hostIds"] = v
 					resultMap["cpuUse"] = dataMap["cpuUse"]
 					resultMap["memoryUse"] = dataMap["memoryUse"]
+					resultMap["hostName"] = statMap[v]["hostName"]
+					resultMap["cpuNum"] = statMap[v]["cpuNum"]
+					resultMap["memoryTotal"] = statMap[v]["memoryTotal"]
+					resultMap["ip"] = statMap[v]["ip"]
 					resultSlice = append(resultSlice, resultMap)
 				}
 
@@ -88,6 +112,10 @@ func HostHistoryStat(hostIds []string, statMap sync.Map, compareWay string, cpuC
 					resultMap["hostIds"] = v
 					resultMap["cpuUse"] = dataMap["cpuUse"]
 					resultMap["memoryUse"] = dataMap["memoryUse"]
+					resultMap["hostName"] = statMap[v]["hostName"]
+					resultMap["cpuNum"] = statMap[v]["cpuNum"]
+					resultMap["memoryTotal"] = statMap[v]["memoryTotal"]
+					resultMap["ip"] = statMap[v]["ip"]
 					resultSlice = append(resultSlice, resultMap)
 				}
 
@@ -99,6 +127,10 @@ func HostHistoryStat(hostIds []string, statMap sync.Map, compareWay string, cpuC
 					resultMap["hostIds"] = v
 					resultMap["cpuUse"] = dataMap["cpuUse"]
 					resultMap["memoryUse"] = dataMap["memoryUse"]
+					resultMap["hostName"] = statMap[v]["hostName"]
+					resultMap["cpuNum"] = statMap[v]["cpuNum"]
+					resultMap["memoryTotal"] = statMap[v]["memoryTotal"]
+					resultMap["ip"] = statMap[v]["ip"]
 					resultSlice = append(resultSlice, resultMap)
 				}
 
@@ -107,6 +139,10 @@ func HostHistoryStat(hostIds []string, statMap sync.Map, compareWay string, cpuC
 					resultMap["hostIds"] = v
 					resultMap["cpuUse"] = dataMap["cpuUse"]
 					resultMap["memoryUse"] = dataMap["memoryUse"]
+					resultMap["hostName"] = statMap[v]["hostName"]
+					resultMap["cpuNum"] = statMap[v]["cpuNum"]
+					resultMap["memoryTotal"] = statMap[v]["memoryTotal"]
+					resultMap["ip"] = statMap[v]["ip"]
 					resultSlice = append(resultSlice, resultMap)
 				}
 
@@ -115,6 +151,10 @@ func HostHistoryStat(hostIds []string, statMap sync.Map, compareWay string, cpuC
 					resultMap["hostIds"] = v
 					resultMap["cpuUse"] = dataMap["cpuUse"]
 					resultMap["memoryUse"] = dataMap["memoryUse"]
+					resultMap["hostName"] = statMap[v]["hostName"]
+					resultMap["cpuNum"] = statMap[v]["cpuNum"]
+					resultMap["memoryTotal"] = statMap[v]["memoryTotal"]
+					resultMap["ip"] = statMap[v]["ip"]
 					resultSlice = append(resultSlice, resultMap)
 				}
 			}
